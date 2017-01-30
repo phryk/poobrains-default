@@ -1,0 +1,170 @@
+/*@import('static/ostrich/ostrich-sans.css');*/
+@import 'static/ostrich-sans/ostrich-sans.css';
+@import 'static/open-sans/open-sans.css';
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background-image: url('static/bg.svg'), linear-gradient(to bottom, rgb(15,15,15), rgb(40,50,80) 100ex);
+    background-size: 100% auto;
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Open Sans', sans;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 140ex;
+    min-height: 100%;
+}
+
+section#sidebar-left {
+    position: sticky;
+    position: relative;
+    top: 0;
+    flex-basis: 30ex;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+    align-items: stretch;
+    padding: 2ex;
+    z-index: 200;
+    background: rgba(0,0,0, 0.85);
+    border-left: 0.75ex solid rgba(255,255,255, 0.8);
+    border-right: 0.75ex solid rgba(255,255,255, 0.8);
+    border-bottom: 0.75ex solid rgba(255,255,255, 0.8);
+    bottom: -0.75ex;
+
+    & > .sticky {
+        position: sticky;
+        top: 2ex;
+    }
+
+    nav.menu {
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+
+            li {
+                flex-shrink: 1;
+                flex-grow: 1;
+                min-width: 17ex;
+
+                a {
+                    display: block;
+                    width: 100%;
+
+                    &.active,
+                    &:hover {
+                        color: rgba(128,255,0, 0.8);
+                    }
+
+                    &:after {
+                        display: inline-block;
+                        background: rgba(128,255,0, 0.8);
+                        content: "█";
+                        vertical-align: 22%;
+                        margin-left: 0.5ex;
+                        font-size: 60%;
+                        opacity: 0;
+                    }
+
+                    &:hover:after {
+                        opacity: 1;
+                        animation: blink 0.5s linear infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+
+    flex-basis: 80ex;
+    flex-shrink: 1;
+    flex-grow: 5;
+    margin: 2ex;
+
+    &>header {
+
+        position: sticky;
+        top: 12ex;
+        font-family: 'Ostrich Sans Inline', sans;
+        padding: 1ex;
+        color: rgba(0,0,0, 0.8);
+        background: rgba(255,255,255, 0.7);
+        transform: rotate(-10deg);
+        margin: 10ex 0;
+        z-index: 50;
+
+        h1 {
+            margin: 0;
+            font-size: 54pt;
+            font-weight: normal;
+            text-align: center;
+        }
+    }
+
+    #content {
+
+        position: relative;
+        background: rgba(0,0,0, 0.85);
+        padding: 2ex;
+        z-index: 100;
+    }
+}
+
+nav {
+
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+
+    &#menu-main a {
+        /*font-family: 'Ostrich Sans Inline';*/
+        font-family: 'Ostrich Sans', sans;
+        font-size: 32pt;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+    }
+}
+
+article {
+
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 14pt;
+
+    p:first-child {
+        margin-top: 0;
+    }
+}

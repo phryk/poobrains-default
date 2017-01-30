@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="1920"
+   height="1080">
+
+   <circle id="circ01" cx="50%" cy="50%" r="1000" />
+   <circle id="circ02" cx="50%" cy="50%" r="950" />
+   <circle id="circ03" cx="50%" cy="50%" r="900" />
+   <circle id="circ04" cx="50%" cy="50%" r="850" />
+   <circle id="circ05" cx="50%" cy="50%" r="800" />
+   <circle id="circ06" cx="50%" cy="50%" r="750" />
+   <circle id="circ07" cx="50%" cy="50%" r="700" />
+   <circle id="circ08" cx="50%" cy="50%" r="650" />
+   <circle id="circ09" cx="50%" cy="50%" r="600" />
+   <circle id="circ10" cx="50%" cy="50%" r="550" />
+   <circle id="circ11" cx="50%" cy="50%" r="500" />
+   <circle id="circ12" cx="50%" cy="50%" r="450" />
+   <circle id="circ13" cx="50%" cy="50%" r="400" />
+   <circle id="circ14" cx="50%" cy="50%" r="350" />
+   <circle id="circ15" cx="50%" cy="50%" r="300" />
+   <circle id="circ16" cx="50%" cy="50%" r="250" />
+   <circle id="circ17" cx="50%" cy="50%" r="200" />
+   <circle id="circ18" cx="50%" cy="50%" r="150" />
+   <circle id="circ19" cx="50%" cy="50%" r="100" />
+   <circle id="circ20" cx="50%" cy="50%" r="50" />
+   <text id="dattext" x="50%" y="50%" text-anchor="middle">Hello, world!</text>
+
+   <style>
+
+    #dattext {
+        fill: rgb(0,0,0);
+        font-size: 72pt;
+        font-family: monospace;
+        /*transform-origin: 960px, 540px, 0;*/
+        animation: bleepbloop 1s ease-out infinite, huehuehue 0.3s ease-in-out infinite;
+    }
+
+    circle {
+        animation: huehuehue 2s ease-in-out infinite;
+    }
+
+    #circ01 {
+        animation-delay: 0.1s;
+    }
+
+    #circ02 {
+        animation-delay: 0.2s;
+    }
+
+    #circ03 {
+        animation-delay: 0.3s;
+    }
+
+    #circ04 {
+        animation-delay: 0.4s;
+    }
+
+    #circ05 {
+        animation-delay: 0.5s;
+    }
+
+    #circ06 {
+        animation-delay: 0.6s;
+    }
+
+    #circ07 {
+        animation-delay: 0.7s;
+    }
+
+    #circ08 {
+        animation-delay: 0.8s;
+    }
+
+    #circ09 {
+        animation-delay: 0.9s;
+    }
+
+    #circ10 {
+        animation-delay: 1.0s;
+    }
+
+    #circ11 {
+        animation-delay: 1.1s;
+    }
+
+    #circ12 {
+        animation-delay: 1.2s;
+    }
+
+    #circ13 {
+        animation-delay: 1.3s;
+    }
+
+    #circ14 {
+        animation-delay: 1.4s;
+    }
+
+    #circ15 {
+        animation-delay: 1.5s;
+    }
+
+    #circ16 {
+        animation-delay: 1.6s;
+    }
+
+    #circ17 {
+        animation-delay: 1.7s;
+    }
+
+    #circ18 {
+        animation-delay: 1.8s;
+    }
+
+    #circ19 {
+        animation-delay: 1.9s;
+    }
+
+    #circ20 {
+        animation-delay: 2.0s;
+    }
+
+
+    @keyframes huehuehue {
+    
+        0% {
+            fill: hsl(0, 100%, 50%);
+        }
+
+        25% {
+            fill: hsl(90, 100%, 50%);
+        }
+        
+        50% {
+            fill: hsl(180, 100%, 50%);
+        }
+
+        75% {
+            fill: hsl(270, 100%, 50%);
+        }
+
+        100% {
+            fill: hsl(360, 100%, 50%);
+        }
+    }
+
+    @keyframes bleepbloop {
+        
+        0% {
+            font-size: 48pt;
+        }
+
+        50% {
+            font-size: 72pt;
+        }
+
+        100% {
+            font-size: 48pt;
+        }
+    }
+
+   </style>
+
+</svg>

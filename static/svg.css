@@ -1,0 +1,12 @@
+svg {
+    background-color: rgba(0,0,0,0);
+}
+
+svg:hover #logo {
+    fill: #f00;
+}
+
+#logo {
+    fill: rgba(255,255,255, 0.4);
+}
+

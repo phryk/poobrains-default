@@ -68,13 +68,11 @@ section#sidebar-left {
     z-index: 200;
     background-color: rgba(0,0,0, 0.85);
     border-bottom: 0.25rem solid rgba(255,255,255, 0.8);
-    /*border-radius: 0 0 7.5rem 7.5rem;
-    -webkit-border-radius: 0 !important;*/
     
     /*-webkit-clip-path: polygon(0 0, 0 calc(100% - 3rem), 50% 100%, 100% calc(100% - 3rem), 100% 0);*/
-    clip: polygon(0 0, 0 calc(100% - 3rem), 50% 100%, 100% calc(100% - 3rem), 100% 0);
 
-    overflow-y: hidden;
+    overflow: hidden;
+    
     & > .sticky {
         position: sticky;
         top: 1rem;
@@ -225,8 +223,29 @@ form {
         background: rgba(255,255,255, 0.4);
         
         &[type="text"] {
+            font-size: 1rem;
             line-height: 150%;
+            color: rgba(0,0,0, 0.8);
         }
     }
+
+}
+
+#search {
+
+
+        input {
+                display: inline-block;
+                font-weight: bold;
+                width: 50%;
+
+                &:focus {
+                    width: 70%;
+                }
+        }
+        button {
+                display: inline;
+                width: 30%;
+        }
 
 }
